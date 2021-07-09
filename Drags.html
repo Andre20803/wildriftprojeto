@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssindex.css">
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+         $(document).ready(function(){
+            alert('document is ready');
+
+            $(".branco1").on("click",function(){
+               $('div').addClass('preto');
+               $('a').addClass('preto');
+               $('body').addClass('preto');
+            });
+            $('.preto1').click(function(){
+                $('div').removeClass('preto');
+                $('a').removeClass('preto');
+                $('body').removeClass('preto');
+
+            });
+        });
+
+    </script>
+    
+    <style>
+        
+        .centro{
+            height: 390vh;
+        }
+        img{
+            width: 100%;
+        }
+        @media (max-width: 700px) {
+            body{
+                background-color: black;
+                
+
+
+            }
+            .centro{
+                width: fit-content;
+                min-width: 100% !important;
+                max-width: 100% !important;
+                overflow-x: hidden; 
+            }
+            img{
+                width: 90%;
+            }
+            p{
+                font-size: 22px;
+            }
+            h2{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 2px;
+            }
+            body{
+         }
+        }
+    </style>
+
+    <title>Dragões</title>
+</head>
+<body id="bodyclick">
+    <!-- Main DIV -->
+    <div class="centro" id="centro">
+
+        <div class="botoes">
+        <button class="branco1" style="width: 30px; height: 20px; background-color: white; border: 1px solid black;"></button>
+        <button class="preto1" style="width: 30px; height: 20px; background-color: black; border: 1px solid white;"></button>
+            </div>
+        <img style="width: 250px; height: 110px; position: relative;" src="wild_rift.png">
+            
+        <fieldset>
+            <legend>
+                <h1>Tópicos</h1>
+            </legend>
+            <Span> <a id="same" href="Drags.html">Dragões</a></Span>
+            <Span> <a href="Index.html">Campeões</a></Span>
+            <Span><a href="itens.html">Itens</a></Span>
+        </fieldset>
+        
+        <!-- Dragão da Montanha -->
+        <h2>Dragão da Montanha</h2>
+        <img id="mountain" src="MountainDrag.jpg">
+        <p>Concede 6% do máximo de pontos de vida como escudo após 5 segundos sem receber dano. <br>
+            <p>Em sua forma Anciã, Concede 9% do máximo de pontos de vida como escudo após 5 segundos sem receber dano.
+            </p>
+        </p>
+
+        <hr>
+
+        <!-- Dragão da Nuvem -->
+        <h2>Dragão da Nuvem</h2>
+        <img id="Cloud" src="CloudDrag.jfif">
+        <p>Concede velocidade de movimento de bônus de 7,5%, dobrada para 15% quando fora de combate. <br>
+            <p>Em sua forma Anciã, Concede velocidade de movimento bônus de 11,25%, dobrado para 22,5% quando fora de combate.
+            </p>
+        </p>
+
+            <hr>
+            <!-- Dragão Infernal -->
+            <h2>Dragão Infernal</h2>
+            <img id="infernal" src="DragInfernal.jpg">
+            <p>Concede 8% a mais de dano.</p> <br>
+            <p>Em sua forma Anciã, Concede 12% a mais de dano.
+            </p>
+             <hr>
+
+            <h2>Dragão do Oceano</h2>
+            <img style="width: fit-content;" id="ocean" src="OceanDrag.jpg">
+            <p>Concede 8% de Vampirismo Físico e Vampirismo Mágico.
+            </p> <br>
+            <p>Em sua forma Anciã, Concede 12% de Vamp Físico e Vamp Mágico.
+            </p>
+        </div>
+
+        
+</body>
+</html>

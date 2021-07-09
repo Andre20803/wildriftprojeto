@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Rift - Tópico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="cssindex.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        @media (max-width: 700px) {
+            .centro{
+                width: fit-content;
+                height: auto;   
+         }
+         body{
+            overflow-x: hidden; 
+         }
+         span{
+             display: inline-block;
+         }
+         button{
+            margin-left: 20px;
+            z-index: -1;
+         }
+        }
+    </style>
+    <script>    
+    // MODO CLARO E ESCURO
+        $(document).ready(function(){
+
+            $(".branco1").on("click",function(){
+               $('div').addClass('preto');
+               $('a').addClass('preto');
+               $('body').addClass('preto');
+            });
+            $('.preto1').click(function(){
+                $('div').removeClass('preto');
+                $('a').removeClass('preto');
+                $('body').removeClass('preto');
+
+            });
+            // Imagens mudando
+
+            $('#camille').click(function(){
+                $('#camille').fadeOut(function(){
+                    $(this).attr("src", "camille1.jpg");
+                    $(this).fadeIn(800);
+                });
+            });
+            $('#tf').click(function(){
+                $('#tf').fadeOut(function(){
+                $(this).attr("src","Twisted_fate1.jpg");
+                $(this).fadeIn();
+                });
+            });
+            $('#seraphine').click(function(){
+                $('#seraphine').fadeOut(function(){
+                $(this).attr("src","Seraphine1.jpg");
+                $(this).fadeIn();
+                });
+            });
+            
+            
+        });
+    </script>
+    
+</head>
+
+<body id="bodyclick">
+    <!-- Main DIV -->
+    <div class="centro" id="centro">
+
+        <div class="botoes">
+        <button class="branco1" style="width: 30px; height: 20px; background-color: white; border: 1px solid black;"></button>
+        <button class="preto1" style="width: 30px; height: 20px; background-color: black; border: 1px solid white;"></button>
+            </div>
+        <img style="width: 250px; height: 110px; position: relative;" src="wild_rift.png">
+            
+        <fieldset>
+            <legend>
+                <h1>Tópicos</h1>
+            </legend>
+            <Span> <a id="same" href="Index.html">Campeões</a></Span>
+            <Span> <a href="Drags.html">Dragões</a></Span>
+            <Span><a href="itens.html">Itens</a></Span>
+        </fieldset>
+        <!-- Camille -->
+        <h2>Camille, a sombra de aço</h2>
+        <img id="camille" src="camille.jpg">
+        <p>Munida para agir além dos limites da lei, Camille é a chefe de inteligência do Clã Ferros e uma elegante
+            agente de elite, responsável pelo bom
+            funcionamento da máquina de Piltover e de Zaun, seu submundo.</p>
+        <a  href="https://br.leagueoflegends.com/pt-br/champions/camille/">Ler mais <i style="padding: 0px 9px;" class="fas fa-external-link-alt"></i></a>
+
+        <hr>
+
+        <!-- Twisted Fate -->
+        <h2>Twisted Fate, o mestre das cartas</h2>
+        <img id="tf" src="twisted_fate.jpg">
+        <p>Twisted Fate é um infame trapaceiro que apostou e encantou tudo em seu
+        caminho por boa parte do mundo, conquistando a inimizade e admiração tanto de ricos quanto tolos.</p>
+            <a href="https://br.leagueoflegends.com/pt-br/champions/twisted-fate/">Ler mais <i style="padding: 0px 9px;" class="fas fa-external-link-alt"></i></a>
+
+            <hr>
+            <!-- Seraphine -->
+            <h2>Seraphine, A Cantora Sonhadora</h2>
+            <img id="seraphine" src="Seraphine.jpg">
+            <p>Nascida em Piltover e filha de zaunitas, Seraphine é capaz de ouvir a alma das pessoas. O mundo canta para ela, e ela canta em resposta.</p>
+            <a href="https://br.leagueoflegends.com/pt-br/champions/seraphine/  ">Ler mais <i style="padding: 0px 9px;" class="fas fa-external-link-alt"></i></a>
+        </div>
+</body>
+
+</html>

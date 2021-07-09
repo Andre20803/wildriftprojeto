@@ -1,0 +1,86 @@
+.preto{
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.481) !important;
+}
+.botoes{
+    display: inline-block;
+}
+button{
+    display: block;
+    margin: 4px 0px;
+}
+#same{
+    color: pink;
+}
+a:hover{
+    color: pink;
+    transition: 0.9s;
+}
+
+body{
+    background-color: black;
+
+}
+.bodyclass{
+    background-color: white;
+}
+.centro{
+    background-color: black;
+    margin: 50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 2px;
+    height: 320vh;
+    position: relative;
+    display: block;
+    text-align: center;
+
+}
+p{
+    padding: 0px 80px;
+    font-family: sans-serif;
+}
+hr{
+    margin:10px 15% ;
+    opacity: 0.8;
+}
+img{
+    width: 300px;
+    height: 400px;
+}
+h2{
+    text-align: center;
+;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-family: fantasy;    
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+fieldset{
+    text-align: center;
+    margin: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: medium;
+    position: relative;
+    border-left: none;
+    border-right: none ;
+}
+span{
+    margin: 0 15px ;
+}
+a{
+    text-decoration: underline;
+    color: white;
+    font-family: serif;
+    font-weight: 600;
+}
+.mudoua{
+    color: black;
+}
